@@ -1,8 +1,8 @@
-import {Injectable, Logger, LoggerService} from '@nestjs/common';
+import {ConsoleLogger, Injectable, LoggerService} from '@nestjs/common';
 import {BugsnagService} from "./bugsnag.service";
 
 @Injectable()
-export class BugsnagLogger extends Logger implements LoggerService {
+export class BugsnagLogger extends ConsoleLogger implements LoggerService {
 
     constructor(
         private bugsnagService: BugsnagService
