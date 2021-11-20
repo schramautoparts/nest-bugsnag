@@ -1,5 +1,5 @@
 {
-  "name": "@keizie/nest-bugsnag",
+  "name": "@schramautoparts/nest-bugsnag",
   "version": "8.0.0",
   "description": "A Nest module wrapper for bugsnag",
   "keywords": [
@@ -11,14 +11,14 @@
     "node": "12.x"
   },
   "type": "git",
-  "url": "https://github.com/keizie/nest-bugsnag",
-  "homepage": "https://github.com/keizie/nest-bugsnag",
+  "url": "https://github.com/schramautoparts/nest-bugsnag",
+  "homepage": "https://github.com/schramautoparts/nest-bugsnag",
   "bugs": {
-    "url": "https://github.com/keizie/nest-bugsnag/issues"
+    "url": "https://github.com/schramautoparts/nest-bugsnag/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Jeong-Hee Kang",
+  "author": "Schram Auto Parts",
   "license": "MIT",
   "scripts": {
     "clean:build": "npm run clean && npm run build",
@@ -37,7 +37,7 @@
     "@nestjs/common": "^8.0.6",
     "@nestjs/core": "^8.0.6",
     "@nestjs/platform-express": "^8.0.6",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.3.0"
   },
@@ -50,7 +50,7 @@
     "supertest": "^6.1.6",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
-    "typescript": "4.4.3"
+    "typescript": "^4.5.2"
   },
   "peerDependencies": {
     "@bugsnag/js": "^7.11.0",
