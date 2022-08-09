@@ -6,8 +6,8 @@
  
 <p align="center">
 
-<a href="https://www.npmjs.com/package/@nkaurelien/nest-bugsnag"><img src="https://img.shields.io/npm/v/@nkaurelien/nest-bugsnag.svg" alt="NPM Version" /></a>
-<a href="https://github.com/nkaurelien/nest-bugsnag"><img src="https://img.shields.io/npm/l/@nkaurelien/nest-bugsnag.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/package/@schramautoparts/nest-bugsnag"><img src="https://img.shields.io/npm/v/@schramautoparts/nest-bugsnag.svg" alt="NPM Version" /></a>
+<a href="https://github.com/schramautoparts/nest-bugsnag"><img src="https://img.shields.io/npm/l/@schramautoparts/nest-bugsnag.svg" alt="Package License" /></a>
 <a href="https://twitter.com/AstridNkumbe"><img src="https://img.shields.io/twitter/follow/AstridNkumbe.svg?style=social&label=Follow"></a>
 
 </p>
@@ -20,7 +20,7 @@ A [Nest](https://github.com/nestjs/nest) module wrapper for [bugsnag-js](https:/
 
 ```bash
 $ npm i @bugsnag/plugin-express --save
-$ npm i @nkaurelien/nest-bugsnag --save
+$ npm i @schramautoparts/nest-bugsnag --save
 ```
 
 ## Quick Start
@@ -29,7 +29,7 @@ Import the `BugsnagModule` into the module. For example `AppModule`:
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { BugsnagModule } from '@nkaurelien/nest-bugsnag';
+import { BugsnagModule } from '@schramautoparts/nest-bugsnag';
 import BugsnagPluginExpress from '@bugsnag/plugin-express'
 
 
@@ -63,7 +63,7 @@ Then you can inject BugsnagService. Example:
 
 ```typescript
 import { Controller } from '@nestjs/common';
-import { BugsnagService } from '@nkaurelien/nest-bugsnag';
+import { BugsnagService } from '@schramautoparts/nest-bugsnag';
 
 @Controller('cats')
 export class CatsController {
@@ -100,7 +100,7 @@ Note that `BugsnagModule` is a global module, it will be available in all you fe
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { BugsnagModule } from '@nkaurelien/nest-bugsnag';
+import { BugsnagModule } from '@schramautoparts/nest-bugsnag';
 
 @Module({
   imports: [
