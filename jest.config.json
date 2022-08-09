@@ -1,7 +1,7 @@
 {
   "globals": {
     "ts-jest": {
-      "tsConfig": "<rootDir>/tsconfig.json"
+      "tsconfig": "<rootDir>/tsconfig.json"
     }
   },
   "moduleDirectories": [
@@ -19,5 +19,6 @@
   ],
   "transform": {
     "^.+\\.(js|ts|tsx)$": "ts-jest"
-  }
+  },
+  "preset": "ts-jest/presets/js-with-ts"
 }
