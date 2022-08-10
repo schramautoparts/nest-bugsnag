@@ -1,4 +1,6 @@
 export * from './bugsnag.module';
-export {BugsnagService} from './bugsnag.service';
-export {BugsnagLogger} from './bugsnag.logger';
-export {BugsnagClient} from './bugsnag.interfaces';
+export * from './bugsnag.providers';
+export * from './bugsnag.constants';
+export { BugsnagService } from './bugsnag.service';
+export { BugsnagLogger } from './bugsnag.logger';
+export { BugsnagClient } from './bugsnag.interfaces';
