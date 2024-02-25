@@ -1,6 +1,6 @@
 # source
 lib
-tests
+test
 sample
 index.ts
 package-lock.json
@@ -23,4 +23,20 @@ publish.sh
 .dockerignore
 docker-compose.yml
 Dockerfile
-jest.config.js
+jest.config.*
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
