@@ -1,17 +1,16 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { BugsnagModule, BugsnagService } from '../src';
-import { BUGSNAG_SERVICE_PROVIDER } from '../src/bugsnag.constants';
+import { BugsnagModule, BugsnagService } from '../lib';
 
 describe('Bugsnag Module', () => {
 
   it('Test root method', async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [BugsnagModule.forRoot({
+      imports: [BugsnagModule.register({
         apiKey: 'some random key',
       })],
     }).compile();
 
-    const provider = moduleFixture.get<BugsnagService>(BUGSNAG_SERVICE_PROVIDER);
+    const provider = moduleFixture.get(BugsnagService);
     expect(provider).toBeInstanceOf(BugsnagService);
     expect(provider).toHaveProperty('instance');
     expect(provider.instance).toBeDefined();
@@ -19,7 +18,7 @@ describe('Bugsnag Module', () => {
 
   it('Test root async method', async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [BugsnagModule.forRootAsync({
+      imports: [BugsnagModule.registerAsync({
         useFactory: () => {
           return {
             apiKey: 'random-key',
@@ -28,7 +27,7 @@ describe('Bugsnag Module', () => {
       })],
     }).compile();
 
-    const provider = moduleFixture.get<BugsnagService>(BUGSNAG_SERVICE_PROVIDER);
+    const provider = moduleFixture.get(BugsnagService);
     expect(provider).toBeInstanceOf(BugsnagService);
     expect(provider).toHaveProperty('instance');
     expect(provider.instance).toBeDefined();
