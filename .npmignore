@@ -1,6 +1,42 @@
 # source
-src
+lib
+test
+sample
+index.ts
 package-lock.json
-tsconfig.json
-tslint.json
 yarn.lock
+tsconfig.json
+.prettierrc
+docs
+website
+
+# misc
+.commitlintrc.json
+.release-it.json
+.eslintignore
+.eslintrc.js
+renovate.json
+.prettierignore
+.prettierrc
+publish.sh
+.github
+.dockerignore
+docker-compose.yml
+Dockerfile
+jest.config.*
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
